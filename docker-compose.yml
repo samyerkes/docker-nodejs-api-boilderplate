@@ -12,7 +12,7 @@ services:
         image: mysql:5.7
         environment:
             - MYSQL_ROOT_PASSWORD=root
-            - MYSQL_DATABASE=${PARKS_DB}
+            - MYSQL_DATABASE=${DB_NAME}
         volumes:
             - ./db:/var/lib/mysql
         ports:
