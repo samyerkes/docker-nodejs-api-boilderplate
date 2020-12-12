@@ -8,7 +8,7 @@ const usersController = require('./controllers').users;
 
 const app = express()
 const port = 3000
-app.use(logger('dev'));
+app.use(logger('common'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
