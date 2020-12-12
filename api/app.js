@@ -1,13 +1,14 @@
 
 const express = require('express')
+const basicAuth = require('express-basic-auth')
 const { Sequelize } = require('sequelize')
 const logger = require('morgan');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser')
 const dotenv = require('dotenv').config()
-const usersController = require('./controllers').users;
 
 const app = express()
 const port = 3000
+
 app.use(logger('common'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
