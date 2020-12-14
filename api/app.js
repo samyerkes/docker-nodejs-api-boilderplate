@@ -18,7 +18,7 @@ const sequelize = new Sequelize(`mysql://${process.env.DB_USER}:${process.env.DB
 require('./routes')(app);
 
 app.get('*', (req, res) => res.status(200).send({
-  message: 'My boilderplate API',
+  message: 'My boilerplate API',
   version: 0.1
 }));
 
